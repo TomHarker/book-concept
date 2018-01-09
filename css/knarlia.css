@@ -1,0 +1,39 @@
+/*knarlia generic*/
+
+body {
+  overflow:hidden;  
+  margin:0px; 
+  opacity:0.3; 
+  user-select:none;  
+  -webkit-user-select:none;
+}
+
+section {
+  /* background-color:gold;*/
+  transform: scale(1); 
+  position:absolute; 
+  top:50%; 
+  left:50%; 
+  margin-top:-125px; 
+  margin-left:-250px; 
+  transform:rotateX(-20deg) rotateY(0deg); 
+  width:500px; 
+  height:250px; 
+  transform-style:preserve-3d;
+}
+
+#floor {
+  border-radius:250px;   
+  position:absolute; 
+  top:0px; 
+  left:0px; 
+  width:500px; 
+  height:500px;  
+  transform:rotateX(90deg) translateZ(0px);
+  -webkit-mask-image:-webkit-radial-gradient(circle, #1a82f7, rgba(0,0,0,0)); 
+  -webkit-mask-size: 500px; 
+  -webkit-mask-position: center; 
+  -webkit-mask-repeat:no-repeat;
+}
+
+.item {position:absolute; bottom:0px;}
